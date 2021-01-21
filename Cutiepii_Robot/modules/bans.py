@@ -68,11 +68,11 @@ def ban(update: Update, context: CallbackContext) -> str:
             return log_message
         elif user_id in TIGERS:
             message.reply_text(
-                "Wait...President Rias is coming...She will deal with you."
+                "Wait...President Rias is coming...She will deal with you, until then I go brrrrrrrrr."
             )
             return log_message
         elif user_id in WOLVES:
-            message.reply_text("Cutie Cutie...Can't ban Rias's servants!")
+            message.reply_text("Can't ban Rias's servants!")
             return log_message
         else:
             message.reply_text("This user has immunity and cannot be banned.")
@@ -315,7 +315,7 @@ def unban(update: Update, context: CallbackContext) -> str:
         return log_message
 
     chat.unban_member(user_id)
-    message.reply_text("Yep, this user can join!")
+    message.reply_text("Alright! This user can join again!")
 
     log = (
         f"<b>{html.escape(chat.title)}:</b>\n"
