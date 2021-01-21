@@ -203,7 +203,7 @@ def slash_get(update: Update, context: CallbackContext):
         note_name = str(noteid).strip(">").split()[1]
         get(update, context, note_name, show_none=False)
     except IndexError:
-        update.effective_message.reply_text("Wrong Note ID 😾")
+        update.effective_message.reply_text("Wrong Note ID")
 
 
 @run_async
