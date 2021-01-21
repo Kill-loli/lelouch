@@ -32,7 +32,7 @@ def check_user(user_id: int, bot: Bot, chat: Chat) -> Optional[str]:
             raise
 
     if user_id == bot.id:
-        reply = "I'm not gonna MUTE myself, How high are you?"
+        reply = "Are you crazy??? I'm not gonna MUTE myself, How high are you?"
         return reply
 
     if is_user_admin(chat, user_id, member) or user_id in TIGERS:
@@ -140,7 +140,7 @@ def unmute(update: Update, context: CallbackContext) -> str:
             )
     else:
         message.reply_text(
-            "This user isn't even in the chat, unmuting them won't make them talk more than they "
+            "Eh? This user isn't even in the chat, unmuting them won't make them talk more than they "
             "already do!")
 
     return ""
