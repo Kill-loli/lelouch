@@ -1,8 +1,8 @@
 from telethon import events
-from Cutiepii_Robot import telethn
+from Lelouch_Lamperouge_bot import telethn
 
 """Triggers start command in pm and in groupchats"""
-def Cutiepii_Robot(**args):
+def Lelouch_Lamperouge_bot(**args):
     """New message."""
     pattern = args.get('pattern', None)
     r_pattern = r'^[/!]'
