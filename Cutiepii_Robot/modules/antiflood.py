@@ -83,7 +83,7 @@ def check_flood(update, context) -> str:
 
     except BadRequest:
         msg.reply_text(
-            "I can't restrict people here, give me permissions first! Until then, I'll disable anti-flood."
+            "Baka! I can't restrict people here, give me permissions first! Until then, I'll disable anti-flood."
         )
         sql.set_flood(chat.id, 0)
         return "<b>{}:</b>" \
@@ -134,7 +134,7 @@ def set_flood(update, context) -> str:
     else:
         if update.effective_message.chat.type == "private":
             send_message(update.effective_message,
-                         "This command is meant to use in group not in PM")
+                         "Bruh, this command is meant to use in group not in PM")
             return ""
         chat_id = update.effective_chat.id
         chat_name = update.effective_message.chat.title
